@@ -1,0 +1,128 @@
+<div class="full-height" id="home">
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="filter"></div>
+      <!-- <video autoplay loop muted playsinline class="fillWidth">
+        <source src="https://app.coverr.co/s3/mp4/Mock-up.mp4" type="video/mp4" />Your browser does not support the
+        video tag. I suggest you upgrade your browser.
+      </video> -->
+      <div class="poster">
+        <div class="flex-center">
+          <h1>Furnishing Your Home For Less</h1>
+          <h3>Furniture – Comfort you can live with</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="interior">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="main-title">
+          <h2>Interior Designs</h2>
+          <h4>Quality Doesn’t Have To Be Expensive</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12" *ngFor="let interior of interiors">
+        <div class="interior-card">
+          <a href="javascript:void(0)" class="link-container">
+            <div class="background-img">
+              <div class="interiors" [style.backgroundImage]="interior.image"></div>
+            </div>
+            <div class="interior-details">
+              <h3>{{interior.title}}</h3>
+              <p>{{interior.detail}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="parallax-stories" id="stories">
+  <div class="container">
+    <div class="col-12">
+      <div class="main-title">
+        <h2>Our Stories</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 m-auto">
+        <div class="stories-content">
+          <p>Furniture is something people are always looking for a bargain for. Having periodic sales can dramatically
+            increase your customer base and profits. If you do want to have a sale, then a good slogan to promote it is
+            a great way to get the word out. Here are some wonderful examples of furniture sale slogans to use for your
+            ads.</p>
+          <p>Furniture is something people are always looking for a bargain for. Having periodic sales can dramatically
+            increase your customer base and profits. If you do want to have a sale, then a good slogan to promote it is
+            a great way to get the word out. Here are some wonderful examples of furniture sale slogans to use for your
+            ads.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="products">
+  <div class="container">
+    <div class="main-title">
+      <h2>Our Products</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let image of mySlideImages;let i = index">
+            <div>
+              <img src={{image}} />
+            </div>
+          </div>
+        </owl-carousel> -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="parallax-vision" id="vision">
+  <div class="container">
+    <div class="main-title">
+      <h2>Our Vision</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8 m-auto">
+        <div class="stories-content">
+          <p>Furniture is something people are always looking for a bargain for. Having periodic sales can dramatically
+            increase your customer base and profits. If you do want to have a sale, then a good slogan to promote it is
+            a great way to get the word out. Here are some wonderful examples of furniture sale slogans to use for your
+            ads.</p>
+          <p>Furniture is something people are always looking for a bargain for. Having periodic sales can dramatically
+            increase your customer base and profits. If you do want to have a sale, then a good slogan to promote it is
+            a great way to get the word out. Here are some wonderful examples of furniture sale slogans to use for your
+            ads.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="main-title">
+      <h2>Our Products</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12 mb-xs-3" *ngFor="let product of productsImages; let i = index">
+        <div class="card">
+          <a href="javascript:void(0)" class="card-body">
+            <div class="img-container">
+              <figure>
+                <img [src]="product.imagePath" alt="Product-1" class="img-fluid">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <h4>{{product.title}}</h4>
+              <p>{{product.desc}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+// variable
+$primary-color: #e38600;
+.navbar{
+  position: fixed;
+  background-color: rgba(0,0,0);
+  z-index: 101;
+}
+.navbar-item{
+  padding: 0 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover{
+    color: $primary-color;
+  }
+}
+.navbar-item{text-decoration: none;outline: none;}
+
+@media screen and (max-width:576px) {
+  .navbar-menu {
+    display: none;
+  }
+}
