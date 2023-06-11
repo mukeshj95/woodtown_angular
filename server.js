@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 app.set('views', __dirname + '/dist/woodtown_angular'); // Set views (index.html) to root directory
-app.use(express.static(__dirname + '/dist/woodtown_angularr'));
+app.use(express.static(__dirname + '/dist/woodtown_angular'));
 
 
 app.use(function (req, res, next) {
